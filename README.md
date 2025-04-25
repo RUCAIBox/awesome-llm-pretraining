@@ -274,13 +274,13 @@ Web page data will form the core corpus in pre-training.
 
 1. **DCLM**. [[paper](https://arxiv.org/abs/2406.11794)] [[resource](https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0)]
    > An open-source web page dataset, a 3.8T dataset obtained after screening by Fasttext, etc.
-2. **FineWeb-Edu**
+2. **FineWeb-Edu** [[paper](https://arxiv.org/abs/2406.17557)] [[resource](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)]
    > A corpus for educational quality scoring, screened and scored from FineWeb, which has certain effects on knowledge-intensive questions.
 3. **Nemotron-CC-HQ**. [[paper](https://arxiv.org/abs/2412.02595)] [[resource](https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/index.html)]
    > NVIDIA's CC corpus.
 4. **Chinese-FineWeb-Edu**. [[resource](https://huggingface.co/collections/opencsg/high-quality-chinese-training-datasets-66cfed105f502ece8f29643e)]
    > An open-source Chinese educational quality scoring corpus by OpenCSG, screened and scored from Map-CC, SkyPile, WuDao, Wanjuan, etc.
-5. **FineWeb2: A sparkling update with 1000s of languages**
+5. **FineWeb2: A sparkling update with 1000s of languages** [[resource](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2)]
    > A multilingual dataset.
 
 ### 3.2 Mathematics
