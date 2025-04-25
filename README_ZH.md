@@ -1,5 +1,6 @@
 # Awesome LLM Pre-training
 
+**中文版** | [English Version](https://github.com/RUCAIBox/awesome-llm-pretraining/blob/main/README_ZH.md)
 
 预训练是研发大语言模型的第一个训练阶段，也是最为重要的一个阶段。随着开源社区在模型架构、训练策略、开源数据集、数据方法等方面的完善，我们持续关注可用于大模型预训练的资源，以回馈开源社区中的大语言模型的开发者。
 
