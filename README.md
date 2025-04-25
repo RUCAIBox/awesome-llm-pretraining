@@ -206,6 +206,18 @@ The most commonly used training framework is Megatron-LM, which provides a good 
 5. **Liger Kernel: Efficient Triton Kernels for LLM Training**. [[code](https://github.com/linkedin/Liger-Kernel)] [[paper](https://arxiv.org/abs/2410.10989)]
    > Triton acceleration operator library.
 
+<details>
+<summary>All Training Frameworks</summary>
+
+1. **Deepspeed: System optimizations enable training deep learning models with over 100 billion parameters**. [[code](https://github.com/deepspeedai/DeepSpeed)] [[paper](https://dl.acm.org/doi/10.1145/3394486.3406703)]
+   > Zero-redundancy data parallelism
+2. **TorchTitan: One-stop PyTorch native solution for production ready LLM pretraining**. [[code](https://github.com/pytorch/torchtitan)] [[paper](https://openreview.net/forum?id=SFN6Wm7YBI)]
+   > Torch-native parallelism based on DTensor
+3. **Flash Linear Attention** [[code](https://github.com/fla-org/flash-linear-attention/tree/main)]
+   > Efficient Triton-based implementations for state-of-the-art linear attention models
+
+</details>
+
 ### 2.2 Training Strategies
 
 Regarding hyperparameter Scaling Law, parallel strategies, initialization strategies, optimizer selection, FP8 training, etc.
