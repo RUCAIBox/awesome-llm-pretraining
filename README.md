@@ -254,5 +254,159 @@ The most commonly used training framework is Megatron-LM, which provides a good 
 4. **Muon is Scalable for LLM Training**
    > An efficient optimizer
 5. **COAT: Compressing Optimizer states and Activation for Memory-Efficient FP8 Training**
+   > Training with optimizer states and activations also in FP8
+6. **Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models**
+   > Regarding the Scaling Law of MoE
 
+### Interpretability
+
+We incompletely list some interpretability works that are inspiring for pre-training.
+
+1. **On the Biology of a Large Language Model**
+2. **Physics of Language Models**
+3. **In-context Learning and Induction Heads**
+4. **Rethinking Reflection in Pre-Training**
+
+### Model Architecture Improvement
+
+We incompletely list some recent improvements to model architectures.
+
+1. **Gated Delta Networks: Improving Mamba2 with Delta Rule**
+2. **RWKV-7 "Goose" with Expressive Dynamic State Evolution**
+3. **Mixture of Hidden-Dimensions Transformer**
+4. **Titans: Learning to Memorize at Test Time**
+5. **Ultra-Sparse Memory Network**
+6. **Large Language Diffusion Models**
+7. **Better & Faster Large Language Models via Multi-token Prediction**
+8. **Quantizable Transformers: Removing Outliers by Helping Attention Heads Do Nothing**
+9. **Stick-breaking Attention**
+10. **Forgetting Transformer: Softmax Attention with a Forget Gate**
+11. **Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention**
+12. **MoBA: Mixture of Block Attention for Long-Context LLMs**
+13. **KV Shifting Attention Enhances Language Modeling**
+14. **Demons in the Detail: On Implementing Load Balancing Loss for Training Specialized Mixture-of-Expert Models**
+15. **Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts**
+16. **ReLU2 Wins: Discovering Efficient Activation Functions for Sparse LLMs**
+17. **μnit Scaling: Simple and Scalable FP8 LLM Training**
+
+### Learning Rate Annealing
+
+Learning rate annealing is often combined with data quality screening.
+
+1. **MiniCPM: Unveiling the Potential of Small Language Models with Scalable Training Strategies**
+2. **Scaling Laws and Compute-Optimal Training Beyond Fixed Training Durations**
+3. **Scaling Law with Learning Rate Annealing**
+
+## Open-Source Datasets
+
+We mainly discuss existing open-source datasets from four aspects: web pages, mathematics, code, and general (books, encyclopedias, instructions, long contexts, etc.).
+
+### Web Pages
+
+Web page data will form the core corpus in pre-training.
+
+1. **DCLM**. [[paper](https://arxiv.org/abs/2406.11794)] [[resource](https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0)]
+   > An open-source web page dataset, a 3.8T dataset obtained after screening by Fasttext, etc.
+2. **FineWeb-Edu**
+   > A corpus for educational quality scoring, screened and scored from FineWeb, which has certain effects on knowledge-intensive questions.
+3. **Nemotron-CC-HQ**. [[paper](https://arxiv.org/abs/2412.02595)] [[resource](https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/index.html)]
+   > NVIDIA's CC corpus.
+4. **Chinese-FineWeb-Edu**. [[resource](https://huggingface.co/collections/opencsg/high-quality-chinese-training-datasets-66cfed105f502ece8f29643e)]
+   > An open-source Chinese educational quality scoring corpus by OpenCSG, screened and scored from Map-CC, SkyPile, WuDao, Wanjuan, etc.
+5. **FineWeb2: A sparkling update with 1000s of languages**
+   > A multilingual dataset.
+
+### Mathematics
+
+1. **MegaMath: Pushing the Limits of Open Math Corpora**
+   > The largest open-source high-quality mathematical CC corpus.
+2. **JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models**
+   > Synthetic mathematical instruction data.
+3. **mlfoundations-dev/stackoverflow_math**
+   > Math-related questions.
+4. **DeepMath-103K: A Large-Scale, Challenging, Decontaminated, and Verifiable Mathematical Dataset for Advancing Reasoning**
+   > A high-difficulty mathematical dataset.
+5. **YuLan-Mini: An Open Data-efficient Language Model**
+   > Collecting open-source Lean theorem proving datasets.
+
+### Code
+
+1. **OpenCoder: The Open Cookbook for Top-Tier Code Large Language Models**
+   > Cleaned from The-Stack-V2.
+2. **SmolLM-corpus**. [[resource](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus)]
+   > Python educational quality scoring.
+3. **The-Stack-V2**
+   > The largest-scale uncleaned code data.
+4. **YuLan-Mini: An Open Data-efficient Language Model**
+   > Cleaning Jupyter-Notebook and Python data with educational quality.
+5. **HuggingFaceTB/issues-kaggle-notebooks**
+   > GitHub Issues and Kaggle Notebooks data.
+6. **mlfoundations-dev/stackoverflow**
+   > A programming Q&A forum.
+7. **Magicoder: Empowering Code Generation with OSS-Instruct**
+   > Training with synthetic instruction data generated from open-source code.
+
+### General (Books, Encyclopedias, Instructions, Long Contexts, etc.)
+
+1. **YuLan: An Open-source Large Language Model**
+   > Enhancing long-tail knowledge and cleaning various general data sources.
+2. **MinerU: An Open-Source Solution for Precise Document Content Extraction**
+   > Converting PDF to Markdown with strong compatibility.
+3. **The Pile: An 800GB Dataset of Diverse Text for Language Modeling**.
+   > arXiv, conversations, DM Math, etc.
+4. **Dolma: an Open Corpus of Three Trillion Tokens for Language Model Pretraining Research**.
+   > Encyclopedias, books, papers, Reddit, etc.
+5. **WanJuan: A Comprehensive Multimodal Dataset for Advancing English and Chinese Large Models**
+   > Laws, exams, news, patents, encyclopedias, etc.
+6. **MAmmoTH2: Scaling Instructions from the Web**
+   > Q&A for web pages.
+7. **togethercomputer/Long-Data-Collections**
+   > Books, papers, web pages, and instructions filtered from datasets such as RedPajama, Pile, and P3.
+8. **Longattn: Selecting long-context training data via token-level attention**
+   > Q&A for long-range dependencies.
+
+## Data Methods
+
+### Tokenizers
+
+1. **SuperBPE: Space Travel for Language Models**
+   > A training method for multi-word tokenizers.
+2. **Scaling Laws with Vocabulary: Larger Models Deserve Larger Vocabularies**
+   > Predicting the size of the vocabulary.
+3. **Tokenization counts: the impact of tokenization on arithmetic in frontier LLMs**
+   > Comparing the tokenization methods of numbers.
+
+### Data Ratio and Curriculum
+
+1. **Nemotron-4 15B Technical Report**
+   > Divided into 8T pre-training and continued pre-training with a smaller data scale.
+2. **YuLan-Mini: An Open Data-efficient Language Model**
+   > Using educational scores for curriculum data.
+3. **DoReMi: Optimizing Data Mixtures Speeds Up Language Model Pretraining**
+   > Optimizing the mixing ratio of pre-training data.
+4. **Efficient Online Data Mixing For Language Model Pre-Training**
+   > Online data mixing.
+5. **Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance**
+   > Laws of data mixing.
+6. **Data Mixture Inference: What do BPE Tokenizers Reveal about their Training Data?**
+   > Cracking the data ratio of commercial models such as GPT through the merging rules of BPE tokenizers.
+7. **CLIMB: CLustering-based Iterative Data Mixture Bootstrapping for Language Model Pre-training**
+   > A clustering-based iterative data mixture bootstrapping framework.
+8. **Infini-gram: Scaling Unbounded n-gram Language Models to a Trillion Tokens**
+   > Building an index for large-scale pre-training datasets to check data quality.
+
+### Data Synthesis
+
+1. **Knowledge-Instruct: Effective Continual Pre-training from Limited Data using Instructions**
+   > Generating information-intensive synthetic instruction data and learning knowledge from a limited corpus.
+2. **LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs**
+   > Constructing long-text Creative Writing.
+3. **Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use**
+   > Multi-step reasoning data synthesis, decomposing complex tasks into sub-trajectories and optimizing data generation in combination with reinforcement learning.
+4. **WildChat: 1M ChatGPT Interaction Logs in the Wild**
+   > An open-source dataset of real user conversations.
+5. **Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing**
+   > Alignment data synthesis.
+6. **Imitate, Explore, and Self-Improve: A Reproduction Report on Slow-thinking Reasoning Systems**
+   > Imitation learning based on long thinking chain synthetic data.
 
