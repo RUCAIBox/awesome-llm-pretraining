@@ -228,7 +228,7 @@ Regarding hyperparameter Scaling Law, parallel strategies, initialization strate
 We list some interpretability works that are inspiring for pre-training.
 
 1. **On the Biology of a Large Language Model**. [[blog](https://transformer-circuits.pub/2025/attribution-graphs/biology.html)]
-2. **Physics of Language Models**. [[homepage](Physics of Language Models)]
+2. **Physics of Language Models**. [[homepage](https://physics.allen-zhu.com/)]
 3. **In-context Learning and Induction Heads**. [[blog](https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html)] [[paper](https://arxiv.org/abs/2209.11895)]
 4. **Rethinking Reflection in Pre-Training**. [[paper](https://arxiv.org/abs/2504.04022)]
 
