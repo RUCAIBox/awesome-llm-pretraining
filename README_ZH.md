@@ -276,13 +276,13 @@
 
 1. **DCLM**. [[paper](https://arxiv.org/abs/2406.11794)] [[resource](https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0)]
    > 开源网页数据集，经过Fasttext等筛选后得到的3.8T数据集
-2. **FineWeb-Edu**
+2. **FineWeb-Edu** [[paper](https://arxiv.org/abs/2406.17557)] [[resource](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)]
    > 教育质量打分语料，从FineWeb中筛选打分，对于知识密集型题目有一定效果
 3. **Nemotron-CC-HQ**. [[paper](https://arxiv.org/abs/2412.02595)] [[resource](https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/index.html)]
    > 英伟达的CC语料
 4. **Chinese-FineWeb-Edu**. [[resource](https://huggingface.co/collections/opencsg/high-quality-chinese-training-datasets-66cfed105f502ece8f29643e)]
    > OpenCSG开源的中文教育质量打分语料，从Map-CC、SkyPile、WuDao、Wanjuan等筛选打分
-5. **FineWeb2: A sparkling update with 1000s of languages**
+5. **FineWeb2: A sparkling update with 1000s of languages** [[resource](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2)]
    > 多语言数据集
 
 
