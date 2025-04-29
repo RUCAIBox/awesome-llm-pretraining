@@ -410,3 +410,7 @@ In addition to the synthetic data for mathematics and code mentioned above, we s
 ## Contribution
 
 If you have suggestions for the project content, please submit [Issues](https://github.com/RUCAIBox/awesome-llm-pretraining/issues/new) and PRs to jointly promote the development of large language models.
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=RUCAIBox/awesome-llm-pretraining&type=Date)](https://www.star-history.com/#RUCAIBox/awesome-llm-pretraining&Date)
